@@ -15,6 +15,7 @@ namespace LabBigSchool_DuongGiaBao.Models
         public string LecturerId { get; set; }
         [Required]
         [StringLength(255)]
+
         public string Place { get; set; }
         public DateTime dateTime { get; set; }
         public Category category { get; set; }
