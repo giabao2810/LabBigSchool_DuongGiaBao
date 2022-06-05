@@ -23,6 +23,7 @@ namespace LabBigSchool_DuongGiaBao.Controllers
      
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(CourseViewModels viewModels)
         {
             if (!ModelState.IsValid)
