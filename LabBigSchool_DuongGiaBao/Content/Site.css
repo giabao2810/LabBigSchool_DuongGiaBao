@@ -27,3 +27,26 @@ textarea {
     background-color: darkblue;
     border-color: coral;
 }
+
+.course{
+    list-style:none;
+}
+
+.course > li {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.course > li .date{
+    text-align:center;
+    background-color: #ff0000;
+    color: white;
+    width: 60px;
+    border-radius: 8px;
+}
+
+.course > li.details{
+    position: absolute;
+    top:0px;
+    left:70px
+}
