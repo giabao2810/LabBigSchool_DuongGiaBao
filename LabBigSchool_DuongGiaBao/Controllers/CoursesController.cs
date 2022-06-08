@@ -22,6 +22,14 @@ namespace LabBigSchool_DuongGiaBao.Controllers
         // GET: Courses
      
         [Authorize]
+        public ActionResult Create()
+        {
+            var viewModel = new CourseViewModels
+            {
+                categories = dbContext.Categories.ToList()
+            };
+            return View(viewModel);
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(CourseViewModels viewModels)
