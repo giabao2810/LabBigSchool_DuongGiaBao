@@ -26,7 +26,7 @@ namespace LabBigSchool_DuongGiaBao.Controllers
             var folowing = new Following
             {
                 FollowerId = userId,
-                FolloweeId = FollowingDto.FolloweeId
+                FolloweeId = followingDto.FolloweeId
             };
             dbContext.Followings.Add(folowing);
             dbContext.SaveChanges();
