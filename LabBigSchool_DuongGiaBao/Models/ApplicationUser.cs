@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
 using System.Security.Claims;
@@ -21,8 +22,8 @@ namespace LabBigSchool_DuongGiaBao.Models
 
         public ApplicationUser()
         {
-            Followers = new ICollection<Following>();
-            Followees = new ICollection<Following>();
+            Followers = new Collection<Following>();
+            Followees = new Collection<Following>();
         }
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {

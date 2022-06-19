@@ -49,6 +49,7 @@
       <HintPath>..\packages\Hangfire.Core.1.7.30\lib\net46\Hangfire.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -183,9 +184,11 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AttendancesController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
+    <Compile Include="Controllers\FollowingsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="DTOs\AttendanceDto.cs" />
+    <Compile Include="DTOs\FollowingDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -208,6 +211,10 @@
     <Compile Include="Migrations\202206150156087_AddAttendance.cs" />
     <Compile Include="Migrations\202206150156087_AddAttendance.Designer.cs">
       <DependentUpon>202206150156087_AddAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202206191334070_AddFollowingsTable.cs" />
+    <Compile Include="Migrations\202206191334070_AddFollowingsTable.Designer.cs">
+      <DependentUpon>202206191334070_AddFollowingsTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -313,6 +320,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202206150156087_AddAttendance.resx">
       <DependentUpon>202206150156087_AddAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206191334070_AddFollowingsTable.resx">
+      <DependentUpon>202206191334070_AddFollowingsTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
