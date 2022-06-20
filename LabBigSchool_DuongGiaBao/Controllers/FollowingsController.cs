@@ -17,6 +17,7 @@ namespace LabBigSchool_DuongGiaBao.Controllers
         {
             dbContext = new ApplicationDbContext();
         }
+
         [HttpPost]
         public IHttpActionResult Follow(FollowingDto followingDto)
         {
@@ -31,8 +32,6 @@ namespace LabBigSchool_DuongGiaBao.Controllers
             dbContext.Followings.Add(folowing);
             dbContext.SaveChanges();
         }
-
-
 
     }
 }

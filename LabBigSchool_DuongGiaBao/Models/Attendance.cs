@@ -19,6 +19,6 @@ namespace LabBigSchool_DuongGiaBao.Models
 
         [Key]
         [Column(Order = 2)]
-        public string AttendeeID { get; set; }
+        public string AttendeeId { get; set; }
     }
 }

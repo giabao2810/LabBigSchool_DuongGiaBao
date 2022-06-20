@@ -25,12 +25,12 @@ namespace LabBigSchool_DuongGiaBao.Controllers
          
         {
             var userId = User.Identity.GetUserId();
-            if (dbcontext.Attendances.Any(a => a.AttendeeID == userId && a.CourseID == attendanceDto.CourseId))
+            if (dbcontext.Attendances.Any(a => a.AttendeeId == userId && a.CourseID == attendanceDto.CourseId))
                 return BadRequest("the Attendance already exists!");
             var attendance = new Attendance
             {
                 CourseID = attendanceDto.CourseId,
-                AttendeeID = userId
+                AttendeeId = userId
             };
             dbcontext.Attendances.Add(attendance);
             dbcontext.SaveChanges();
